@@ -1,0 +1,27 @@
+<p>if-condition works!</p>
+
+<!-- <h1 *ngIf="show; else elseBlock">code show</h1>
+<ng-template #elseBlock>
+  <p>Else Block</p>
+</ng-template> -->
+<!-- an other way to use if else condition -->
+
+<h1 *ngIf="show; then ifBlock; else elseBlock"></h1>
+
+<ng-template #ifBlock>
+  <h1>If Statement</h1>
+</ng-template>
+<ng-template #elseBlock>
+  <h1>Else Statement</h1>
+</ng-template>
+<!-- toggle boolen using toggle button -->
+<button (click)="toggle()">Toggle</button>
+
+<!-- now use else if statement  -->
+
+<ng-template [ngIf]="color === 'red'">
+  <h1 style="color: red">Else Statement</h1>
+</ng-template>
+<ng-template [ngIf]="color === 'blue'">
+  <h1 style="color: blue">Else Statement</h1>
+</ng-template>

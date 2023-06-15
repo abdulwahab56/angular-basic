@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'counter app run ';
-  count = 0;
-  counter(type: string) {
-    type === 'add' ? this.count++ : this.count--;
-  }
+  title = 'Angular Practics ';
 }
